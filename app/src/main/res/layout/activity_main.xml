@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_to_total"
+        android:layout_width="305dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="169dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Welcome to the people counter"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/count_button"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="191dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="188dp"
+        android:background="#9C27B0"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Click to count!"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_total" />
+
+    <TextView
+        android:id="@+id/view_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="118dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/count_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_to_total" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
